@@ -244,7 +244,7 @@ function putDataInSchema(header, item, schema){
 
 
 function trimQuote(str){
-    return str.trim().replace(/^["|'](.*)["|']$/, '$1');
+    return String(str).trim().replace(/^["|'](.*)["|']$/, '$1');
 }
 
 function convertArray(str, delimiter) {
